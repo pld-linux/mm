@@ -41,7 +41,7 @@ Obsoletes:	libmm1-devel
 %description devel
 Header files and development documentation for mm.
 
-%description -l pl devel
+%description devel -l pl
 Pliki nag³ówkowe i dokumentacja do biblioteki mm.
 
 %package static
@@ -53,7 +53,7 @@ Requires:	%{name}-devel = %{version}
 %description static
 Static mm libraries.
 
-%description -l pl static
+%description static -l pl
 Biblioteki statyczne mm.
 
 %prep
