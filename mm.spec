@@ -1,7 +1,7 @@
 Summary:	MM - Shared Memory Library
 Name:		mm
 Version:	1.1.3
-Release:	2
+Release:	3
 Group:		Libraries
 Group(de):	Libraries
 Group(fr):	Librairies
