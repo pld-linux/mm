@@ -7,6 +7,7 @@ Group:		Libraries
 License:	BSD-like (see LICENSE)
 Vendor:		Ralf S. Engelschall <rse@engelschall.com>
 Source0:	ftp://ftp.ossp.org/pkg/lib/mm/%{name}-%{version}.tar.gz
+# Source0-md5: 4bf43697983bf585905ee9a14b00dc32
 URL:		http://www.engelschall.com/sw/mm/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Obsoletes:	libmm1
