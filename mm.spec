@@ -53,7 +53,7 @@ Biblioteki statyczne mm.
 %build
 LDFLAGS="-s"; export LDFLAGS
 %configure
-make
+%{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
