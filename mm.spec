@@ -1,18 +1,18 @@
 Summary:	MM - Shared Memory Library
 Summary(pl):	MM - Biblioteka dzielonej pamiêci
 Name:		mm
-Version:	1.3.0
-Release:	2
+Version:	1.3.1
+Release:	1
 Group:		Libraries
 License:	BSD-like (see LICENSE)
 Vendor:		Ralf S. Engelschall <rse@engelschall.com>
 Source0:	ftp://ftp.ossp.org/pkg/lib/mm/%{name}-%{version}.tar.gz
-# Source0-md5: 4bf43697983bf585905ee9a14b00dc32
+# Source0-md5:	7d62bc28b776f46ff5f71521ad17bf70
 URL:		http://www.engelschall.com/sw/mm/
 BuildRequires:	automake
 BuildRequires:	libtool
-BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Obsoletes:	libmm1
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 The MM library is a 2-layer abstraction library which simplifies the
@@ -38,7 +38,7 @@ pamiêci dzielonej.
 Summary:	Header files and development documentation for mm
 Summary(pl):	Pliki nag³ówkowe i dokumentacja do mm
 Group:		Development/Libraries
-Requires:	%{name} = %{version}
+Requires:	%{name} = %{version}-%{release}
 Obsoletes:	libmm1-devel
 
 %description devel
@@ -51,7 +51,7 @@ Pliki nag³ówkowe i dokumentacja do biblioteki mm.
 Summary:	Static mm libraries
 Summary(pl):	Biblioteki statyczne mm
 Group:		Development/Libraries
-Requires:	%{name}-devel = %{version}
+Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 Static mm libraries.
@@ -70,7 +70,8 @@ cp -f /usr/share/automake/config.sub .
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
