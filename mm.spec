@@ -2,7 +2,7 @@ Summary:	MM - Shared Memory Library
 Summary(pl):	MM - Biblioteka dzielonej pamiêci
 Name:		mm
 Version:	1.3.0
-Release:	1
+Release:	2
 Group:		Libraries
 License:	BSD-like (see LICENSE)
 Vendor:		Ralf S. Engelschall <rse@engelschall.com>
