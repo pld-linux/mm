@@ -9,6 +9,8 @@ Vendor:		Ralf S. Engelschall <rse@engelschall.com>
 Source0:	ftp://ftp.ossp.org/pkg/lib/mm/%{name}-%{version}.tar.gz
 # Source0-md5: 4bf43697983bf585905ee9a14b00dc32
 URL:		http://www.engelschall.com/sw/mm/
+BuildRequires:	automake
+BuildRequires:	libtool
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Obsoletes:	libmm1
 
@@ -61,6 +63,7 @@ Biblioteki statyczne mm.
 %setup -q
 
 %build
+cp -f /usr/share/automake/config.sub .
 %configure
 %{__make}
 
