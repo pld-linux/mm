@@ -1,11 +1,16 @@
 Summary:	MM - Shared Memory Library
+Summary(pl):	MM - Biblioteka dzielonej pamiêci
 Name:		mm
 Version:	1.1.3
 Release:	3
 Group:		Libraries
 Group(de):	Libraries
+Group(es):	Bibliotecas
 Group(fr):	Librairies
 Group(pl):	Biblioteki
+Group(pt_BR):	Bibliotecas
+Group(ru):	âÉÂÌÉÏÔÅËÉ
+Group(uk):	â¦ÂÌ¦ÏÔÅËÉ
 License:	BSD-style (see LICENSE file)
 Vendor:		Ralf S. Engelschall <rse@engelschall.com>
 Source0:	http://www.engelschall.com/sw/mm/%{name}-%{version}.tar.gz
@@ -23,13 +28,26 @@ layer it provides a high-level malloc(3)-style API for a convenient
 and well known way to work with data-structures inside those shared
 memory segments.
 
+%description -l pl
+MM jest 2-warstwow±, abstrakcyjn± bibliotek± upraszczaj±c± korzystanie
+z pamiêci dzielonej pomiêdzy sforkowanymi (i w ten sposób mocno
+powi±zanymi) procesami na platformach uniksowych. Pierwsza warstwa
+(ni¿sza) ukrywa wszystkie szczegó³y zale¿ne od platformy (alokacja i
+blokowanie) przy obs³udze segmentów pamiêci dzielonej. Druga (wy¿sza)
+warstwa daje wysokopoziomowe API podobne do malloc(3) aby wygodnie
+pracowaæ ze strukturami danych w tych segmentach pamiêci dzielonej.
+
 %package devel
 Summary:	Header files and development documentation for mm
 Summary(pl):	Pliki nag³ówkowe i dokumentacja do mm
 Group:		Development/Libraries
 Group(de):	Entwicklung/Libraries
+Group(es):	Desarrollo/Bibliotecas
 Group(fr):	Development/Librairies
 Group(pl):	Programowanie/Biblioteki
+Group(pt_BR):	Desenvolvimento/Bibliotecas
+Group(ru):	òÁÚÒÁÂÏÔËÁ/âÉÂÌÉÏÔÅËÉ
+Group(uk):	òÏÚÒÏÂËÁ/â¦ÂÌ¦ÏÔÅËÉ
 Requires:	%{name} = %{version}
 
 %description devel
@@ -43,8 +61,12 @@ Summary:	Static mm libraries
 Summary(pl):	Biblioteki statyczne mm
 Group:		Development/Libraries
 Group(de):	Entwicklung/Libraries
+Group(es):	Desarrollo/Bibliotecas
 Group(fr):	Development/Librairies
 Group(pl):	Programowanie/Biblioteki
+Group(pt_BR):	Desenvolvimento/Bibliotecas
+Group(ru):	òÁÚÒÁÂÏÔËÁ/âÉÂÌÉÏÔÅËÉ
+Group(uk):	òÏÚÒÏÂËÁ/â¦ÂÌ¦ÏÔÅËÉ
 Requires:	%{name}-devel = %{version}
 
 %description static
