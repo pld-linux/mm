@@ -4,7 +4,7 @@ Name:		mm
 Version:	1.1.3
 Release:	4
 Group:		Libraries
-License:	BSD-style (see LICENSE file)
+License:	BSD-like (see LICENSE file)
 Vendor:		Ralf S. Engelschall <rse@engelschall.com>
 Source0:	http://www.engelschall.com/sw/mm/%{name}-%{version}.tar.gz
 Patch0:		%{name}-DESTDIR.patch
