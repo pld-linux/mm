@@ -4,13 +4,6 @@ Name:		mm
 Version:	1.1.3
 Release:	4
 Group:		Libraries
-Group(de):	Libraries
-Group(es):	Bibliotecas
-Group(fr):	Librairies
-Group(pl):	Biblioteki
-Group(pt_BR):	Bibliotecas
-Group(ru):	Библиотеки
-Group(uk):	Б╕бл╕отеки
 License:	BSD-style (see LICENSE file)
 Vendor:		Ralf S. Engelschall <rse@engelschall.com>
 Source0:	http://www.engelschall.com/sw/mm/%{name}-%{version}.tar.gz
@@ -42,13 +35,6 @@ pracowaФ ze strukturami danych w tych segmentach pamiЙci dzielonej.
 Summary:	Header files and development documentation for mm
 Summary(pl):	Pliki nagЁСwkowe i dokumentacja do mm
 Group:		Development/Libraries
-Group(de):	Entwicklung/Libraries
-Group(es):	Desarrollo/Bibliotecas
-Group(fr):	Development/Librairies
-Group(pl):	Programowanie/Biblioteki
-Group(pt_BR):	Desenvolvimento/Bibliotecas
-Group(ru):	Разработка/Библиотеки
-Group(uk):	Розробка/Б╕бл╕отеки
 Requires:	%{name} = %{version}
 Obsoletes:	libmm1-devel
 
@@ -62,13 +48,6 @@ Pliki nagЁСwkowe i dokumentacja do biblioteki mm.
 Summary:	Static mm libraries
 Summary(pl):	Biblioteki statyczne mm
 Group:		Development/Libraries
-Group(de):	Entwicklung/Libraries
-Group(es):	Desarrollo/Bibliotecas
-Group(fr):	Development/Librairies
-Group(pl):	Programowanie/Biblioteki
-Group(pt_BR):	Desenvolvimento/Bibliotecas
-Group(ru):	Разработка/Библиотеки
-Group(uk):	Розробка/Б╕бл╕отеки
 Requires:	%{name}-devel = %{version}
 
 %description static
