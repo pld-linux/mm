@@ -1,29 +1,34 @@
 Summary:	MM - Shared Memory Library
 Name:		mm
 Version:	1.1.3
-Release:	1
+Release:	2
 Group:		Libraries
+Group(de):	Libraries
+Group(fr):	Librairies
 Group(pl):	Biblioteki
-Copyright:	BSD-style (see LICENSE file)
+License:	BSD-style (see LICENSE file)
 Vendor:		Ralf S. Engelschall <rse@engelschall.com>
-Source:		http://www.engelschall.com/sw/mm/%{name}-%{version}.tar.gz
-Patch:		mm-DESTDIR.patch
+Source0:	http://www.engelschall.com/sw/mm/%{name}-%{version}.tar.gz
+Patch0:		%{name}-DESTDIR.patch
 URL:		http://www.engelschall.com/sw/mm/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-The MM library is a 2-layer abstraction library which simplifies the usage
-of shared memory between forked (and this way strongly related) processes
-under Unix platforms. On the first (lower) layer it hides all platform
-dependent implementation details (allocation and locking) when dealing with
-shared memory segments and on the second (higher) layer it provides a
-high-level malloc(3)-style API for a convenient and well known way to work
-with data-structures inside those shared memory segments.
+The MM library is a 2-layer abstraction library which simplifies the
+usage of shared memory between forked (and this way strongly related)
+processes under Unix platforms. On the first (lower) layer it hides
+all platform dependent implementation details (allocation and locking)
+when dealing with shared memory segments and on the second (higher)
+layer it provides a high-level malloc(3)-style API for a convenient
+and well known way to work with data-structures inside those shared
+memory segments.
 
 %package devel
 Summary:	Header files and development documentation for mm
 Summary(pl):	Pliki nag³ówkowe i dokumentacja do mm
 Group:		Development/Libraries
+Group(de):	Entwicklung/Libraries
+Group(fr):	Development/Librairies
 Group(pl):	Programowanie/Biblioteki
 Requires:	%{name} = %{version}
 
@@ -37,6 +42,8 @@ Pliki nag³ówkowe i dokumentacja do biblioteki mm.
 Summary:	Static mm libraries
 Summary(pl):	Biblioteki statyczne mm
 Group:		Development/Libraries
+Group(de):	Entwicklung/Libraries
+Group(fr):	Development/Librairies
 Group(pl):	Programowanie/Biblioteki
 Requires:	%{name}-devel = %{version}
 
@@ -51,7 +58,6 @@ Biblioteki statyczne mm.
 %patch -p1
 
 %build
-LDFLAGS="-s"; export LDFLAGS
 %configure
 %{__make}
 
@@ -60,10 +66,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
 
-strip --strip-unneeded $RPM_BUILD_ROOT%{_libdir}/lib*.so.*.*
-
-gzip -9nf $RPM_BUILD_ROOT/%{_mandir}/man?/* \
-	ChangeLog README LICENSE
+gzip -9nf ChangeLog README LICENSE
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -85,6 +88,5 @@ rm -rf $RPM_BUILD_ROOT
 %{_mandir}/man1/*
 
 %files static
+%defattr(644,root,root,755)
 %attr(644,root,root) %{_libdir}/lib*.a
-
-%changelog
