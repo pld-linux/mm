@@ -2,12 +2,13 @@ Summary:	MM - Shared Memory Library
 Summary(pl):	MM - Biblioteka dzielonej pamiêci
 Name:		mm
 Version:	1.1.3
-Release:	4
+Release:	5
 Group:		Libraries
 License:	BSD-like (see LICENSE file)
 Vendor:		Ralf S. Engelschall <rse@engelschall.com>
 Source0:	http://www.engelschall.com/sw/mm/%{name}-%{version}.tar.gz
 Patch0:		%{name}-DESTDIR.patch
+Patch1:		%{name}-tmpfile.patch
 URL:		http://www.engelschall.com/sw/mm/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Obsoletes:	libmm1
@@ -58,7 +59,8 @@ Biblioteki statyczne mm.
 
 %prep
 %setup -q
-%patch -p1
+%patch0 -p1
+%patch1 -p1
 
 %build
 %configure2_13
@@ -69,8 +71,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
 
-gzip -9nf ChangeLog README LICENSE
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
@@ -79,6 +79,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
+%doc ChangeLog README LICENSE
 %attr(755,root,root) %{_libdir}/lib*.so.*.*
 
 %files devel
