@@ -2,7 +2,7 @@ Summary:	MM - Shared Memory Library
 Summary(pl):	MM - Biblioteka dzielonej pamiЙci
 Name:		mm
 Version:	1.1.3
-Release:	3
+Release:	4
 Group:		Libraries
 Group(de):	Libraries
 Group(es):	Bibliotecas
@@ -17,6 +17,7 @@ Source0:	http://www.engelschall.com/sw/mm/%{name}-%{version}.tar.gz
 Patch0:		%{name}-DESTDIR.patch
 URL:		http://www.engelschall.com/sw/mm/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+Obseoletes:	libmm1
 
 %description
 The MM library is a 2-layer abstraction library which simplifies the
@@ -49,6 +50,7 @@ Group(pt_BR):	Desenvolvimento/Bibliotecas
 Group(ru):	Разработка/Библиотеки
 Group(uk):	Розробка/Б╕бл╕отеки
 Requires:	%{name} = %{version}
+Obseoletes:	libmm1-devel
 
 %description devel
 Header files and development documentation for mm.
