@@ -9,7 +9,7 @@ Vendor:		Ralf S. Engelschall <rse@engelschall.com>
 Source:		http://www.engelschall.com/sw/mm/%{name}-%{version}.tar.gz
 Patch:		mm-DESTDIR.patch
 URL:		http://www.engelschall.com/sw/mm/
-BuildRoot:	/tmp/%{name}-%{version}-root
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 The MM library is a 2-layer abstraction library which simplifies the usage
