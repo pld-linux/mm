@@ -1,7 +1,7 @@
 Summary:	MM - Shared Memory Library
 Name:		mm
 Version:	1.0.12
-Release:	1
+Release:	2
 Group:		Libraries
 Group(pl):	Biblioteki
 Copyright:	BSD-style (see LICENSE file)
@@ -64,8 +64,6 @@ strip --strip-unneeded $RPM_BUILD_ROOT%{_libdir}/lib*.so.*.*
 
 gzip -9nf $RPM_BUILD_ROOT/%{_mandir}/man?/* \
 	CHANGES README LICENSE
-
-%find_lang %{name}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
