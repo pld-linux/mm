@@ -27,8 +27,8 @@ z pamiêci dzielonej pomiêdzy rozga³êzionymi (i w ten sposób mocno
 powi±zanymi) procesami na platformach uniksowych. Pierwsza warstwa
 (ni¿sza) ukrywa wszystkie szczegó³y zale¿ne od platformy (alokacja i
 blokowanie) przy obs³udze segmentów pamiêci dzielonej. Druga (wy¿sza)
-warstwa udostepnia wysokopoziomowe API podobne do malloc(3)
-umo¿liwiaj±ce wygodna pracê ze strukturami danych w tych segmentach
+warstwa udostêpnia wysokopoziomowe API podobne do malloc(3)
+umo¿liwiaj±ce wygodn± pracê ze strukturami danych w tych segmentach
 pamiêci dzielonej.
 
 %package devel
