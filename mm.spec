@@ -6,7 +6,7 @@ Release:	1
 Group:		Libraries
 License:	BSD-like (see LICENSE)
 Vendor:		Ralf S. Engelschall <rse@engelschall.com>
-Source0:	http://www.engelschall.com/sw/mm/%{name}-%{version}.tar.gz
+Source0:	ftp://ftp.ossp.org/pkg/lib/mm/%{name}-%{version}.tar.gz
 URL:		http://www.engelschall.com/sw/mm/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Obsoletes:	libmm1
@@ -23,12 +23,13 @@ memory segments.
 
 %description -l pl
 MM jest 2-warstwow±, abstrakcyjn± bibliotek± upraszczaj±c± korzystanie
-z pamiêci dzielonej pomiêdzy sforkowanymi (i w ten sposób mocno
+z pamiêci dzielonej pomiêdzy rozga³êzionymi (i w ten sposób mocno
 powi±zanymi) procesami na platformach uniksowych. Pierwsza warstwa
 (ni¿sza) ukrywa wszystkie szczegó³y zale¿ne od platformy (alokacja i
 blokowanie) przy obs³udze segmentów pamiêci dzielonej. Druga (wy¿sza)
-warstwa daje wysokopoziomowe API podobne do malloc(3) aby wygodnie
-pracowaæ ze strukturami danych w tych segmentach pamiêci dzielonej.
+warstwa udostepnia wysokopoziomowe API podobne do malloc(3)
+umo¿liwiaj±ce wygodna pracê ze strukturami danych w tych segmentach
+pamiêci dzielonej.
 
 %package devel
 Summary:	Header files and development documentation for mm
