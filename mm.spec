@@ -17,7 +17,7 @@ Source0:	http://www.engelschall.com/sw/mm/%{name}-%{version}.tar.gz
 Patch0:		%{name}-DESTDIR.patch
 URL:		http://www.engelschall.com/sw/mm/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-Obseoletes:	libmm1
+Obsoletes:	libmm1
 
 %description
 The MM library is a 2-layer abstraction library which simplifies the
@@ -50,7 +50,7 @@ Group(pt_BR):	Desenvolvimento/Bibliotecas
 Group(ru):	Разработка/Библиотеки
 Group(uk):	Розробка/Б╕бл╕отеки
 Requires:	%{name} = %{version}
-Obseoletes:	libmm1-devel
+Obsoletes:	libmm1-devel
 
 %description devel
 Header files and development documentation for mm.
