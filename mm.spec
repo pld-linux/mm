@@ -58,7 +58,7 @@ Biblioteki statyczne mm.
 %patch -p1
 
 %build
-%configure
+%configure2_13
 %{__make}
 
 %install
