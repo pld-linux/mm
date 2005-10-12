@@ -1,13 +1,12 @@
 Summary:	MM - Shared Memory Library
 Summary(pl):	MM - Biblioteka dzielonej pamiêci
 Name:		mm
-Version:	1.3.1
+Version:	1.4.0
 Release:	1
 Group:		Libraries
 License:	BSD-like (see LICENSE)
-Vendor:		Ralf S. Engelschall <rse@engelschall.com>
 Source0:	ftp://ftp.ossp.org/pkg/lib/mm/%{name}-%{version}.tar.gz
-# Source0-md5:	7d62bc28b776f46ff5f71521ad17bf70
+# Source0-md5:	393b0891a889a4e9f9481d18d976366c
 URL:		http://www.engelschall.com/sw/mm/
 BuildRequires:	automake
 BuildRequires:	libtool
