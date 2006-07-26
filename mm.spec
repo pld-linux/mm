@@ -3,8 +3,8 @@ Summary(pl):	MM - Biblioteka dzielonej pamiêci
 Name:		mm
 Version:	1.4.0
 Release:	1
-Group:		Libraries
 License:	BSD-like (see LICENSE)
+Group:		Libraries
 Source0:	ftp://ftp.ossp.org/pkg/lib/mm/%{name}-%{version}.tar.gz
 # Source0-md5:	393b0891a889a4e9f9481d18d976366c
 URL:		http://www.engelschall.com/sw/mm/
@@ -94,4 +94,4 @@ rm -rf $RPM_BUILD_ROOT
 
 %files static
 %defattr(644,root,root,755)
-%attr(644,root,root) %{_libdir}/lib*.a
+%{_libdir}/lib*.a
