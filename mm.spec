@@ -1,5 +1,5 @@
 Summary:	MM - Shared Memory Library
-Summary(pl):	MM - Biblioteka dzielonej pamiêci
+Summary(pl.UTF-8):   MM - Biblioteka dzielonej pamiÄ™ci
 Name:		mm
 Version:	1.4.2
 Release:	1
@@ -23,19 +23,19 @@ layer it provides a high-level malloc(3)-style API for a convenient
 and well known way to work with data-structures inside those shared
 memory segments.
 
-%description -l pl
-MM jest 2-warstwow±, abstrakcyjn± bibliotek± upraszczaj±c± korzystanie
-z pamiêci dzielonej pomiêdzy rozga³êzionymi (i w ten sposób mocno
-powi±zanymi) procesami na platformach uniksowych. Pierwsza warstwa
-(ni¿sza) ukrywa wszystkie szczegó³y zale¿ne od platformy (alokacja i
-blokowanie) przy obs³udze segmentów pamiêci dzielonej. Druga (wy¿sza)
-warstwa udostêpnia wysokopoziomowe API podobne do malloc(3)
-umo¿liwiaj±ce wygodn± pracê ze strukturami danych w tych segmentach
-pamiêci dzielonej.
+%description -l pl.UTF-8
+MM jest 2-warstwowÄ…, abstrakcyjnÄ… bibliotekÄ… upraszczajÄ…cÄ… korzystanie
+z pamiÄ™ci dzielonej pomiÄ™dzy rozgaÅ‚Ä™zionymi (i w ten sposÃ³b mocno
+powiÄ…zanymi) procesami na platformach uniksowych. Pierwsza warstwa
+(niÅ¼sza) ukrywa wszystkie szczegÃ³Å‚y zaleÅ¼ne od platformy (alokacja i
+blokowanie) przy obsÅ‚udze segmentÃ³w pamiÄ™ci dzielonej. Druga (wyÅ¼sza)
+warstwa udostÄ™pnia wysokopoziomowe API podobne do malloc(3)
+umoÅ¼liwiajÄ…ce wygodnÄ… pracÄ™ ze strukturami danych w tych segmentach
+pamiÄ™ci dzielonej.
 
 %package devel
 Summary:	Header files and development documentation for mm
-Summary(pl):	Pliki nag³ówkowe i dokumentacja do mm
+Summary(pl.UTF-8):   Pliki nagÅ‚Ã³wkowe i dokumentacja do mm
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Obsoletes:	libmm1-devel
@@ -43,19 +43,19 @@ Obsoletes:	libmm1-devel
 %description devel
 Header files and development documentation for mm.
 
-%description devel -l pl
-Pliki nag³ówkowe i dokumentacja do biblioteki mm.
+%description devel -l pl.UTF-8
+Pliki nagÅ‚Ã³wkowe i dokumentacja do biblioteki mm.
 
 %package static
 Summary:	Static mm libraries
-Summary(pl):	Biblioteki statyczne mm
+Summary(pl.UTF-8):   Biblioteki statyczne mm
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 Static mm libraries.
 
-%description static -l pl
+%description static -l pl.UTF-8
 Biblioteki statyczne mm.
 
 %prep
