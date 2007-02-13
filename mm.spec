@@ -1,5 +1,5 @@
 Summary:	MM - Shared Memory Library
-Summary(pl.UTF-8):   MM - Biblioteka dzielonej pamięci
+Summary(pl.UTF-8):	MM - Biblioteka dzielonej pamięci
 Name:		mm
 Version:	1.4.2
 Release:	1
@@ -35,7 +35,7 @@ pamięci dzielonej.
 
 %package devel
 Summary:	Header files and development documentation for mm
-Summary(pl.UTF-8):   Pliki nagłówkowe i dokumentacja do mm
+Summary(pl.UTF-8):	Pliki nagłówkowe i dokumentacja do mm
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Obsoletes:	libmm1-devel
@@ -48,7 +48,7 @@ Pliki nagłówkowe i dokumentacja do biblioteki mm.
 
 %package static
 Summary:	Static mm libraries
-Summary(pl.UTF-8):   Biblioteki statyczne mm
+Summary(pl.UTF-8):	Biblioteki statyczne mm
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
