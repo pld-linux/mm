@@ -2,7 +2,7 @@ Summary:	MM - Shared Memory Library
 Summary(pl.UTF-8):	MM - Biblioteka dzielonej pamięci
 Name:		mm
 Version:	1.4.2
-Release:	1
+Release:	2
 License:	BSD-like (see LICENSE)
 Group:		Libraries
 Source0:	ftp://ftp.ossp.org/pkg/lib/mm/%{name}-%{version}.tar.gz
