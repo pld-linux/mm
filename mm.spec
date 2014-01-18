@@ -1,5 +1,5 @@
 Summary:	MM - Shared Memory Library
-Summary(pl.UTF-8):	MM - Biblioteka dzielonej pamięci
+Summary(pl.UTF-8):	MM - Biblioteka pamięci dzielonej
 Name:		mm
 Version:	1.4.2
 Release:	3
@@ -81,18 +81,18 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc ChangeLog LICENSE README THANKS
-%attr(755,root,root) %{_libdir}/lib*.so.*.*
-%attr(755,root,root) %ghost %{_libdir}/lib*.so.14
+%attr(755,root,root) %{_libdir}/libmm.so.*.*.*
+%attr(755,root,root) %ghost %{_libdir}/libmm.so.14
 
 %files devel
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_bindir}/mm-config
-%attr(755,root,root) %{_libdir}/lib*.so
-%{_libdir}/lib*.la
-%{_includedir}/*
-%{_mandir}/man3/*
-%{_mandir}/man1/*
+%attr(755,root,root) %{_libdir}/libmm.so
+%{_libdir}/libmm.la
+%{_includedir}/mm.h
+%{_mandir}/man1/mm-config.1*
+%{_mandir}/man3/mm.3*
 
 %files static
 %defattr(644,root,root,755)
-%{_libdir}/lib*.a
+%{_libdir}/libmm.a
